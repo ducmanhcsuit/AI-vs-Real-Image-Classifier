@@ -27,7 +27,7 @@ st.write("Tải lên một bức ảnh bất kỳ để hệ thống kiểm tra 
 @st.cache_resource
 def load_model():
     # Sửa lại tên file mô hình cho đúng với mô hình EfficientNetB0 bạn vừa lưu
-    model_path = 'efficientnetB0_ai_vs_real.keras'
+    model_path = 'efficientnetB0_finetuned_30layers.keras'
 
     if not os.path.exists(model_path):
         st.error(f"❌ Không tìm thấy file mô hình tại: {model_path}. Hãy kiểm tra lại!")
